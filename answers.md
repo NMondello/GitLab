@@ -38,6 +38,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+We will be in the test branch, and the code in process movie in the test branch will get updated to the top_N function.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -45,6 +46,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+We are in the top_ten branch. After the merge, the file "quiz" is altered in the top_ten branch to "answers" as it is in the test branch.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -53,3 +55,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+When we run these commands, we get a merge conflict error. We must resolve the error in test, and then the process movie file is altered.
